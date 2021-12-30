@@ -1,0 +1,47 @@
+/*
+Inline CSS highest priority
+internal CSS lower priority
+External CSS lowest priority
+*/
+
+/* Tag Selectors - Lowest priority */
+body {
+  background-color: #EAF6F6;
+}
+
+h1 {
+  color: #66BFBF;
+}
+
+/* :hover psuedue class to control the state */
+h1:hover {
+  color: #F76B8A;
+}
+
+
+h3 {
+  color: #66BFBF;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-width: 5px;
+  border-color: grey;
+  width: 5%;
+}
+
+
+/* Class Selectors can be used with multiple elements | Classes also merge | Lower priority
+.bacon{
+  background-color: green;
+}
+
+.broccoli{
+  background-color: red;
+}
+
+/* Id Selectors - Must be unique only used in "once" in an HTML page | IDs can not merge | only one ID | Highest priority
+#heading {
+  background-color: blue;
+}
+*/
